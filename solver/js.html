@@ -20,13 +20,17 @@ var pow = (prefix, difficulty) => {
 var run = () => {
   let prefix = document.getElementById('prefix').value;
   let difficulty = parseInt(document.getElementById('difficulty').value);
-  document.getElementById('answer').innerHTML = pow(prefix, difficulty);
+  let answer = pow(prefix, difficulty);
+  document.getElementById('answer').innerHTML = answer;
+  if (document.getElementById("alert").checked)
+    alert(answer);
 };
 </script>
 
 <body>
   Prefix: <input id="prefix" type="text"> 
   Difficulty: <input id="difficulty" type="number" >
+  Alert: <input id="alert" type="checkbox">
   <input type="submit" value="Submit" onClick="run()"> <br/>
   <h3 id="answer">[ready]</h3>
 </body>
