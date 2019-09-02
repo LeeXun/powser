@@ -3,12 +3,13 @@ let crypto = require('crypto');
 let argv = process.argv.slice(2);
 let prefix = argv[0];
 let difficulty = parseInt(argv[1]);
+let zeros = '0'.repeat(difficulty)
 
 let isValid = (hexdigest) => {
   let bin = '';
   for (let c of hexdigest)
     bin += c.toString(2).padStart(8, '0');
-  return bin.startsWith('0'.repeat(difficulty));
+  return bin.startsWith(zeros);
 }
 
 let i = 0;
