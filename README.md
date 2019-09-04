@@ -10,7 +10,7 @@ We support various languages to help you solve the obnoxious PoW.
 - [X] Python 2
 - [X] Python 3
 - [X] NodeJs
-- [ ] JavaScript
+- [X] JavaScript
 - [ ] Ruby
 - [ ] Go
 - [ ] Rust
