@@ -11,7 +11,7 @@ We support various languages to help you solve the obnoxious PoW.
 - [X] Python 3
 - [X] NodeJs
 - [X] JavaScript
-- [ ] Ruby
+- [X] Ruby
 - [ ] Go
 - [ ] Rust
 - [ ] C/C++
