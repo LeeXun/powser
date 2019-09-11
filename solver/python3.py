@@ -17,8 +17,6 @@ i = 0
 while True:
     i += 1
     s = prefix + str(i)
-    h = hashlib.sha256()
-    h.update(s.encode())
-    if is_valid(h.digest()):
+    if is_valid(hashlib.sha256(s.encode()).digest()):
         print(i)
         exit(0)
